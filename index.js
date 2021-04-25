@@ -51,7 +51,7 @@ function playRound(computerSelection,playerSelection){
     return "pthe computer chose paper, paper loses to scissors, YOU WON IT MATE" 
   }
   else{
-    alert("darn maybe you made a mistake with the spellings , try again"")
+    alert("darn maybe you made a mistake with the spellings , try again")
     return "darn maybe you made a mistake with the spellings , try again"
     
   }
@@ -70,7 +70,9 @@ function game(){
 // loop for five rounds nested in a while loop with the playagain option
 let play = true; //condition for while loop
 while (play === true){
-  for (i = 0; i < 5; i++){ // for loop with 5 rounds 
+ alert("5 rounds will be played for each match")
+  for (i = 1; i < 6; i++){ // for loop with 5 rounds 
+    alert("this is round " + i)
     game(); 
   }
   // winner function 
