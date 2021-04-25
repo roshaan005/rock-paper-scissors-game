@@ -61,7 +61,10 @@ function playRound(computerSelection,playerSelection){
 // function for the game play 
 function game(){
   let computerSelection = computerPlay() // the random value function
-  const playerChoice = prompt("choose one of the three : rock , paper or scissors") // prompt for user input 
+  let playerChoice = prompt("choose one of the three : rock , paper or scissors") // prompt for user input 
+  while (playerChoice != "rock" && playerChoice!= "paper" && playerChoice!="scissors"){
+    playerChoice = prompt("please enter one of the three")
+  }
   let playerSelection = playerChoice.toLowerCase() // case-insensitivity 
   console.log(playRound(computerSelection,playerSelection)) //gameplay
 }
