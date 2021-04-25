@@ -74,8 +74,8 @@ while (play === true){
   // winner function 
   winner(computerPoints,playerPoints);
 // ask the user if they want to play again
-  let playAgain= prompt("do u wanna play again (yes or yes?) jk : y/n");
-  let playAg = playAgain.toLowerCase;
+   let playAgain= prompt("do u wanna play again (yes or yes?) jk : y/n");
+  let playAg = playAgain.toLowerCase
   if (playAg ==='y'){
     play = true; 
   }
@@ -83,6 +83,7 @@ while (play === true){
     break;
   }
 }
+
 
 // winner calculator function
 function winner(computerPoints,playerPoints){
