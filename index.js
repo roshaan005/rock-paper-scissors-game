@@ -75,10 +75,11 @@ while (play === true){
   winner(computerPoints,playerPoints);
 // ask the user if they want to play again
   let playAgain= prompt("do u wanna play again (yes or yes?) jk : y/n");
-  if (playAgain.toLowerCase=='y'){
+  let playAG = playAgain.toLowerCase;
+  if (playAg ==='y'){
     play = true; 
   }
-  else if (playAgain !=="y"){
+  else if (playAg === "n"){
     break;
   }
 }
