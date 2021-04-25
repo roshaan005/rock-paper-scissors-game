@@ -51,9 +51,8 @@ function playRound(computerSelection,playerSelection){
     return "pthe computer chose paper, paper loses to scissors, YOU WON IT MATE" 
   }
   else{
-    playerSelection = prompt("please choose between rock , papers and scissors").toLowerCase
-
-    
+    computerPoints+=1
+    alert("wrong input , you lost this round :(")
   }
 }
 
