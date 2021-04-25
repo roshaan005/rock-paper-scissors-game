@@ -51,8 +51,8 @@ function playRound(computerSelection,playerSelection){
     return "pthe computer chose paper, paper loses to scissors, YOU WON IT MATE" 
   }
   else{
-    alert("darn maybe you made a mistake with the spellings , try again")
-    return "darn maybe you made a mistake with the spellings , try again"
+    playerSelection = prompt("please choose between rock , papers and scissors").toLowerCase
+
     
   }
 }
