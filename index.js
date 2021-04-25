@@ -84,6 +84,9 @@ while (play === true){
   else if (playAg === "n"){
     break;
   }
+  else{
+    break;
+  }
 }
 
 
