@@ -59,28 +59,30 @@ function playRound(computerSelection,playerSelection){
 
 // function for the game play 
 function game(){
-  let computerSelection = computerPlay()
-  const playerChoice = prompt("choose one of the three : rock , paper or scissors")
-  let playerSelection = playerChoice.toLowerCase()
-  console.log(playRound(computerSelection,playerSelection))
+  let computerSelection = computerPlay() // the random value function
+  const playerChoice = prompt("choose one of the three : rock , paper or scissors") // prompt for user input 
+  let playerSelection = playerChoice.toLowerCase() // case-insensitivity 
+  console.log(playRound(computerSelection,playerSelection)) //gameplay
 }
 
 // loop for five rounds nested in a while loop with the playagain option
-let play = true;
-while (play = true){
-  for (i = 0; i < 5; i++){
-    game();
+let play = true; //condition for while loop
+while (play === true){
+  for (i = 0; i < 5; i++){ // for loop with 5 rounds 
+    game(); 
   }
   // winner function 
-  winner(computerPoints,playerPoints)
+  winner(computerPoints,playerPoints);
+// ask the user if they want to play again
   let playAgain= prompt("do u wanna play again (yes or yes?) jk : y/n");
   if (playAgain.toLowerCase=='y'){
-    play = true;
+    play = true; 
   }
-  else{
+  else if (playAgain !=="y"){
     break;
   }
 }
+
 // winner calculator function
 function winner(computerPoints,playerPoints){
   if (computerPoints>playerPoints){
