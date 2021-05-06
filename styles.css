@@ -2,10 +2,16 @@ body{
     background-image: url("pictures/Download premium vector of Blooming round floral frame vector 1201212.jpeg");
 }
 #heading{
-    margin-left: 540px;
-    margin-top:60px;
+    /* margin-left: 540px; */
+    /* margin-top:60px; */
     font-size: 20px;
     font-family: 'Fascinate', cursive;
+    text-align: center;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -25,6 +31,7 @@ section{
     justify-content: center;
     align-items: flex-end;
     margin-right:450px;
+    flex-shrink:;
     
 }
 .sec{
@@ -130,6 +137,7 @@ section:hover{
     font-family: 'Fascinate', cursive;
     outline-style: ridge;
     color:rgb(0, 0, 0)
+
 }
 
 img{
