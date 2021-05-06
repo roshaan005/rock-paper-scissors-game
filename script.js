@@ -13,18 +13,18 @@ function computerPlay(){
 
 let computerSelection = computerPlay() 
 
-
+// query selectors listed here 
 let section = document.getElementById("container")
 let textBar = document.getElementById("text")
 let points = document.getElementById("points")
 let sec = section.firstElementChild;
-console.log(sec)
 
 
 
+// event listner for all the buttons 
 section.addEventListener("click",playRound)
 
-
+// initialized points
 let playerPoints = 0  ;
 let computerPoints = 0 ;
 
@@ -34,7 +34,7 @@ function playRound(e){
 
     let computerSelection = computerPlay() 
 
-    
+    // conditions for the game
     if((e.target.className == computerSelection)){
         textBar.textContent = `the computer also  chose ${computerSelection} , its a tie`
     }
@@ -72,16 +72,17 @@ function playRound(e){
         textBar.textContent =  `the computer chose ${computerSelection} , you won  yayyy`
         
     }
+    // score display 
     points.textContent = `your score is ${playerPoints} and the computer's score is  ${computerPoints}`
     let sec = section.firstElementChild;
    
     
 
-
+    // condition for the winner
     if(playerPoints===5){
-        section.textContent= "YOU WON THE GAME!"
+        section.innerHTML= "<p>YOU WON THE GAME</p>"
        
-        textBar.textContent = "you were able to score five points and hence you are the CHAMPIONN"
+        textBar.textContent = "gosh that was fast , you scored FIVE points already doood"
         sec.style.display = "hidden"
     
 
@@ -96,16 +97,13 @@ function playRound(e){
     }
 
 }
-
+// reset button 
 let btn = document.getElementById("btn")
-
+// eventlistner on reset button
 btn.addEventListener("click",tryAgain)
 function tryAgain(){
-    
 
     document.location.reload();
-
-
 }
 
     
