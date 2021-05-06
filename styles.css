@@ -11,6 +11,8 @@ body{
 .main{
     display: flex;
     flex-direction: column;
+
+    height:750px;
 }
 
 section{
@@ -20,9 +22,6 @@ section{
     font-size: 45px; 
     text-align: center;
     font-family: 'Fascinate', cursive;
-    /* margin-left:350px;
-    margin-top: 90px;
-     */
      margin: auto;
      
   
