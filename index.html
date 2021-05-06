@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles.css">
         <title>rock_paper_scissors</title>
+        
     </head>
-    <script src = "index.js"></script>
-    <h1>rock paper scissors</h1>
-    <p>simple rock paper scissors game(open the console using f12), 5 rounds will be played for each match , the player who wins more rounds wins the match</p>
-</html>
+
+    <body>
+       <div id = "heading" ><h1>Rock Paper Scissors </h1></div>
+
+        <div id = "points"><span>let's begin the battle!</span></div>
+
+        <div class = "scoreb">
+            <div id = "text">the player who scores 5 points first will win the match</div>
+            <button id = "btn">reset</button>
+        </div>
+
+        <section id = "container">  
+        
+            <div class = sec>
+
+                <div id = "rock" class = "rock"><img class = "rock" src = "hand (2).png"></div>
+                <div id = "paper" class = "paper"><img class = "paper" src = "hand (1).png"></div>
+                <div id = "scissors"class = "scissors" ><img class = "scissors" src = "peace.png"></div>
+            
+            </div>
+            
+        </section>
+        
+    </body>
+    
+      
+
+   
+    <script src = "script.js"></script>
+
+   </html>
