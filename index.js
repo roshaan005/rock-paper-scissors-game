@@ -74,7 +74,7 @@ let play = true; //condition for while loop
 while (play === true){
  alert("5 rounds will be played for each match")
   for (i = 1; i < 6; i++){ // for loop with 5 rounds 
-    alert("this is round " + i)
+
     game(); 
   }
   // winner function 
