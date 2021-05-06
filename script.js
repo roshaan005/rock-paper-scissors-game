@@ -88,7 +88,7 @@ function playRound(e){
 
     }
     if(computerPoints===5){
-        section.innerHTML= "<p>THE COMPUTER WON THE GAME :(<p>"
+        section.innerHTML= "<p>THE COMPUTER WON THE GAME <p>"
        textBar.textContent = "the computer scored five points before you :/ but you are still amazing "
        sec.style.display = "none";
     

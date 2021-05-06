@@ -32,6 +32,7 @@ section{
     align-items: flex-end;
     margin-right:450px;
     
+    
 }
 .sec{
     display: flex;
@@ -136,7 +137,9 @@ section:hover{
     text-align: center;
     font-family: 'Fascinate', cursive;
     outline-style: ridge;
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
+    flex-shrink: 0;
+
 
 }
 
