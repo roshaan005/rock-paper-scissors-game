@@ -103,7 +103,7 @@ let btn = document.getElementById("btn")
 btn.addEventListener("click",tryAgain)
 function tryAgain(){
 
-    document.location.reload();
+    window.location.reload();
 }
 
     
