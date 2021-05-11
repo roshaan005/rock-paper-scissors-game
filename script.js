@@ -73,7 +73,7 @@ function playRound(e){
         
     }
     // score display 
-    points.textContent = `your score is ${playerPoints} and the computer's score is  ${computerPoints}`
+    points.textContent = `your score is (${playerPoints}) and the computer's score is  (${computerPoints})`
     let sec = section.firstElementChild;
    
     
